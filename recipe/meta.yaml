@@ -34,10 +34,11 @@ source:
   sha256: 95d4e3bd2fa04fe52f9002ac57127cb54c06b1839cd2f631d62d2a0aab1b5499  # [win64 and py35]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - toolchain
     - python
     - cmake  # [not win]
     - swig  # [not win]
@@ -50,9 +51,6 @@ requirements:
 test:
   imports:
     - otmorris
-  commands:
-    - conda inspect linkages -n _test otmorris  # [not win]
-    - conda inspect objects -n _test otmorris  # [osx]
 
 about:
   home: http://openturns.org/
