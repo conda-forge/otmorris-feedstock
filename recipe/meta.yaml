@@ -33,8 +33,12 @@ source:
   url: https://github.com/openturns/build/releases/download/v1.8rc1/otmorris-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
   sha256: 95d4e3bd2fa04fe52f9002ac57127cb54c06b1839cd2f631d62d2a0aab1b5499  # [win64 and py35]
 
+  patches:
+    # https://github.com/openturns/otmorris/pull/9
+    - 0001-Take-interval-into-account-in-MorrisExperimentGrid.patch  # [unix]
+
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
