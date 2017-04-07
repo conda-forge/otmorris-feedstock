@@ -1,4 +1,5 @@
-{% set version = "0.1" %}
+{% set version = "0.2" %}
+{% set ot_version = "1.9rc1" %}
 
 package:
   name: otmorris
@@ -7,38 +8,34 @@ package:
 source:
   fn: otmorris-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otmorris/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 385e7c9d73fc424b319679853a8d9a4e62a5553be634c46ec9faa70986e16242  # [not win]
+  sha256: 389315297d8cd192580c870e538e3fae2f57b0a9077872f13ec78f9eb8eb4f78  # [not win]
 
   fn: otmorris-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  url: https://github.com/openturns/build/releases/download/v1.8/otmorris-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  sha256: 3998869d9f1673ad0af13795e17ed4ed0e3b0ae7249bc098b4ac373640d134fd  # [win32 and py27]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py2.7-i686.exe  # [win32 and py27]
+  sha256: 56f8d7f50ea837b2ea8a2c874d3751a9865a8a2404eef50fd2a7cca0b338574c  # [win32 and py27]
 
   fn: otmorris-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  url: https://github.com/openturns/build/releases/download/v1.8/otmorris-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: d57b08b10c3d83d08fb87541497054b0c72567beb46a1e3baaaa7fe45bbfbb7f  # [win64 and py27]
-
-  fn: otmorris-{{ version }}-py3.4-i686.exe  # [win32 and py34]
-  url: https://github.com/openturns/build/releases/download/v1.8/otmorris-{{ version }}-py3.4-i686.exe  # [win32 and py34]
-  sha256: e8737b946b17abcea8b795603fce7d76995df8a44c9247737774ad0a18e9fddd  # [win32 and py34]
-
-  fn: otmorris-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
-  url: https://github.com/openturns/build/releases/download/v1.8/otmorris-{{ version }}-py3.4-x86_64.exe  # [win64 and py34]
-  sha256: 0aa4ee6392f6e12f93ba2e9b63d273f07e8bd084c3566b36ad355bdf971feaaf  # [win64 and py34]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
+  sha256: a87ac4002bec8764a36a59b2ed3d06fba9c762b9d3b18d7b494c00a72677ccef  # [win64 and py27]
 
   fn: otmorris-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  url: https://github.com/openturns/build/releases/download/v1.8/otmorris-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  sha256: 145ca77604e77674c4a1ea0a302a62cf3cc219ea5918e3229e36c72f2bac44a6  # [win32 and py35]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.5-i686.exe  # [win32 and py35]
+  sha256: 1d4713d1e9fc32ae5b7c46f814f416cac0fa0eee2c5cd6182d2e2eb32f0e560b  # [win32 and py35]
 
   fn: otmorris-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  url: https://github.com/openturns/build/releases/download/v1.8/otmorris-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: 0632900125169bbac08fbed866821f68246f5ea79d5001040b21bda994b8ab65  # [win64 and py35]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
+  sha256: d4395b325f6fa3755800bcdf1cc34ddfb66e20722883fa0990944cc51cbd75d9  # [win64 and py35]
 
-  patches:
-    # https://github.com/openturns/otmorris/pull/9
-    - 0001-Take-interval-into-account-in-MorrisExperimentGrid.patch  # [unix]
+  fn: otmorris-{{ version }}-py3.6-i686.exe  # [win32 and py36]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.6-i686.exe  # [win32 and py36]
+  sha256: 37d8da60cc5989f416fa2c55f704c9d8b5ad37347879861544332bcc88e2c53e  # [win32 and py36]
+
+  fn: otmorris-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
+  url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
+  sha256: 82fff6ae4b9cac4e3fd7a177bc846ed2694f4265f6019f45208570fed8ae881e  # [win64 and py36]
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -58,7 +55,7 @@ test:
 
 about:
   home: http://openturns.org/
-  license: LGPLv3
+  license: LGPL3
   license_file: COPYING.LESSER  # [not win]
   summary: Morris screening module
 
