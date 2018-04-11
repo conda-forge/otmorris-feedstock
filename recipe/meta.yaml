@@ -1,5 +1,5 @@
-{% set version = "0.2" %}
-{% set ot_version = "1.10" %}
+{% set version = "0.4" %}
+{% set ot_version = "1.11rc1" %}
 
 package:
   name: otmorris
@@ -8,34 +8,34 @@ package:
 source:
   fn: otmorris-{{ version }}.tar.gz  # [not win]
   url: https://github.com/openturns/otmorris/archive/v{{ version }}.tar.gz  # [not win]
-  sha256: 389315297d8cd192580c870e538e3fae2f57b0a9077872f13ec78f9eb8eb4f78  # [not win]
+  sha256: 73f10f6d39cb940fea075578b9070fd30420a79492a26735e7597205c8db589f  # [not win]
 
   fn: otmorris-{{ version }}-py2.7-i686.exe  # [win32 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py2.7-i686.exe  # [win32 and py27]
-  sha256: 7abf020f177eb8dc3ca354e424c67efa7446428c6bac997e44013b3b696ee44e  # [win32 and py27]
+  sha256: 591198dc91a19b166254baa7650b866701d6519d1bf84a91e653044bbcb816b4  # [win32 and py27]
 
   fn: otmorris-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py2.7-x86_64.exe  # [win64 and py27]
-  sha256: 0ed0bd083bd214799c7b6d64cc5ea86b3431e35454789cd024cb15449e23e92c  # [win64 and py27]
+  sha256: b3bd8147143eab2014e394889009625da5c3586427fa8a5f429c5a9ba2ba4aed  # [win64 and py27]
 
   fn: otmorris-{{ version }}-py3.5-i686.exe  # [win32 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.5-i686.exe  # [win32 and py35]
-  sha256: 20240b92e45be20bb8a02dde2e1996ec8a5d022613bdf40ac00832dc33a93aa5  # [win32 and py35]
+  sha256: d2a2265f882437a60d7015a1d1e06f1721b1eddd310f02187b0d014da9c4b805  # [win32 and py35]
 
   fn: otmorris-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.5-x86_64.exe  # [win64 and py35]
-  sha256: 247390051d1572b227249d63511423d20b2a5d9ecba4cbe0ae9ea0824a15c23e  # [win64 and py35]
+  sha256: 75c91cf61aed493995116687f1cc1ce0e582eee8d81cbada48c45afe30f9fff4  # [win64 and py35]
 
   fn: otmorris-{{ version }}-py3.6-i686.exe  # [win32 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.6-i686.exe  # [win32 and py36]
-  sha256: d469d8aa8252552d1c5abe4d2963692727425268f8eeed5f694250e728f039db  # [win32 and py36]
+  sha256: ec43440cee193238a3add2e3c664837fd60787444e7ad03d5e9a69dba480c2dc  # [win32 and py36]
 
   fn: otmorris-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
   url: https://github.com/openturns/build-modules/releases/download/v{{ ot_version }}/otmorris-{{ version }}-py3.6-x86_64.exe  # [win64 and py36]
-  sha256: 3c5ce485c8e24484eb30ff567f2bf526e90a98f129fc6ddc7c7459ae09c43e6b  # [win64 and py36]
+  sha256: 0f85a994d12c9a0be0e0197270b1c92d5cee936322ed6ec4aa0c527560f8ce63  # [win64 and py36]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
