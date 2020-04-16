@@ -22,10 +22,10 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - openturns
+    - openturns 1.15*
   run:
     - python
-    - openturns
+    - openturns 1.15*
 
 test:
   imports:
