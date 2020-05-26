@@ -10,7 +10,7 @@ source:
   sha256: 2c80fbfe5518eaee668c4d3f1157242f32181cd2254b4e6ab950db9f5716e811
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otmorris', max_pin='x.x') }}
 
@@ -20,6 +20,7 @@ requirements:
     - swig
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - curl  # [win]
   host:
     - python
     - openturns 1.15*
