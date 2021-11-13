@@ -10,7 +10,7 @@ source:
   sha256: 415ea47751ed77675d1f24bcaf35ee99fe2b2ee49bc453d3dc182735aa7cb390
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otmorris', max_pin='x.x') }}
 
