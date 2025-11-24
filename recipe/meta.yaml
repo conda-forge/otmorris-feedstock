@@ -1,4 +1,4 @@
-{% set version = "0.18" %}
+{% set version = "0.19" %}
 
 package:
   name: otmorris
@@ -7,10 +7,10 @@ package:
 source:
   fn: otmorris-{{ version }}.tar.gz
   url: https://github.com/openturns/otmorris/archive/v{{ version }}.tar.gz
-  sha256: 4270981c539acc3ae1330121631b1371c5274e680eb52e58ac52580669ca62cb
+  sha256: bb43bfa022c63e2cf6958b0d2f853ebd3ce3748d0019b6502cc8e40203d91d3c
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and py==314]
   run_exports:
     - {{ pin_subpackage('otmorris', max_pin='x.x') }}
