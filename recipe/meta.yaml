@@ -10,7 +10,7 @@ source:
   sha256: bb43bfa022c63e2cf6958b0d2f853ebd3ce3748d0019b6502cc8e40203d91d3c
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('otmorris', max_pin='x.x') }}
 
@@ -20,11 +20,11 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cmake
     - make  # [unix]
+    - ninja  # [win]
     - swig
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - curl  # [win]
   host:
     - python
     - openturns
