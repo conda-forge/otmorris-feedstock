@@ -1,5 +1,5 @@
 context:
-  version: "0.20"
+  version: "0.21"
 
 package:
   name: otmorris
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/openturns/otmorris/archive/v${{ version }}.tar.gz
-  sha256: 90f6ab33b6deb28cb5f061410b91af5a09e462bed294dbf3534f665bfe7c61d5
+  sha256: 2a1085e62f0eb95a7da4d8b03fc70ee04856e35b1e20a651d6f851a1b8a65a4e
 
 build:
-  number: 1
+  number: 0
   python:
     version_independent: true
 
